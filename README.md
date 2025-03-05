@@ -1,4 +1,3 @@
-# Vehicle-Configurator
 # 🚗 Vehicle Configurator
 
 ## 🌍 Overview
