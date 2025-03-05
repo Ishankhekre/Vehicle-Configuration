@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Invoice from VConfig</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #007BFF, #00d4ff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .company-name {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #007BFF, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .tagline {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin: 15px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .invoice-details {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .invoice-details p {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="company-name">VConfig</div>
+        <div class="tagline">Seamless Configuration, Seamless Experience</div>
+        <h1>Hello, [User's Name]! 🎉</h1>
+        <p>Thank you for choosing <strong>VConfig</strong>. We truly appreciate your business!</p>
+        
+        <div class="invoice-details">
+            <p>🧾 <strong>Invoice Number:</strong> [Invoice Number]</p>
+            <p>💰 <strong>Amount:</strong>  ₹ [Total Amount]</p>
+        </div>
+
+        <p>Your invoice is attached to this email. If you have any questions, feel free to reach out to us at <a href="mailto:support@vconfig.com">support@vconfig.com</a>.</p>
+
+        <div class="footer">
+            &copy; 2025 VConfig. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

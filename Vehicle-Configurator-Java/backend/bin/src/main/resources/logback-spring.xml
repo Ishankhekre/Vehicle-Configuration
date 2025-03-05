@@ -1,0 +1,37 @@
+<configuration>
+
+    <!-- Define Rolling File Appender for JWT Logs -->
+    <appender name="JWT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/jwt.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/jwt-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Logger for JWT Aspect -->
+    <logger name="com.example.jwt.JwtLoggingAspect" level="INFO" additivity="false">
+        <appender-ref ref="JWT_FILE"/>
+    </logger>
+
+    <!-- ✅ Add Logger for JwtFilter -->
+    <logger name="com.example.jwt.JwtFilter" level="ERROR" additivity="false">
+        <appender-ref ref="JWT_FILE"/>
+    </logger>
+
+    <!-- Console Appender for other logs -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger: Logs everything **except JWT** to console -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>

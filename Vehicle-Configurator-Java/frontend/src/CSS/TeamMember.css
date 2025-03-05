@@ -1,0 +1,23 @@
+.meet-redaptive {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .meet-redaptive h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .meet-redaptive p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  

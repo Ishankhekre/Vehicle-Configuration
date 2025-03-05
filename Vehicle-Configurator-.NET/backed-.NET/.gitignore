@@ -1,0 +1,38 @@
+# Build and temp files
+bin/
+obj/
+.vs/
+temp/
+logs/
+*.log
+
+# Additional temp and cache files
+*.cache
+*.ilk
+*.obj
+*.pdb
+*.ipch
+*.aps
+*.pch
+
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+# Deployment
+publish/
+*.PublishXml
+
+# Frontend (if using React/Angular)
+node_modules/
+dist/
